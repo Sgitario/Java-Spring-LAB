@@ -24,3 +24,4 @@ In the current status, with the commented bean in mvc-config.xml, the NameServic
 When user uncomments the bean of MyNameService (important to specify the id), the MyNameService class is used insteads of NameService class.
 
 Therefore, the XML settings prioritizes its configuration againts annotations.
+ 
