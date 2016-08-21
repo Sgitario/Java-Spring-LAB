@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.java.spring</groupId>
-	<artifactId>Spring-LAB</artifactId>
+	<artifactId>Rest-API</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Jose Carvajal</name>
 	<description>Lab to test Spring features</description>
@@ -14,11 +14,6 @@
 	</properties>
 
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-context</artifactId>
-			<version>${org.springframework.version}</version>
-		</dependency>
 		
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -47,5 +42,16 @@
 			</plugin>
 		</plugins>
 	</build>
+	
+	<repositories>
+	    <repository>
+	        <id>spring-milestones</id>
+	        <name>Spring Milestones</name>
+	        <url>https://repo.spring.io/libs-milestone</url>
+	        <snapshots>
+	            <enabled>false</enabled>
+	        </snapshots>
+	    </repository>
+	</repositories>
 
 </project>
