@@ -10,7 +10,7 @@
 
 	<properties>
 		<org.springframework.version>4.0.1.RELEASE</org.springframework.version>
-		<jdk.version>1.6</jdk.version>
+		<jdk.version>1.8</jdk.version>
 	</properties>
 
 	<dependencies>

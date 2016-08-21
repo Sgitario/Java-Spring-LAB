@@ -9,15 +9,15 @@
 	<packaging>war</packaging>
 
 	<properties>
-		<org.springframework.version>4.0.1.RELEASE</org.springframework.version>
-		<jdk.version>1.6</jdk.version>
+		<org.springframework.version>5.0.0.M1</org.springframework.version>
+		<jdk.version>1.8</jdk.version>
 	</properties>
 
 	<dependencies>
 		
 		<dependency>
 			<groupId>org.springframework</groupId>
-			<artifactId>spring-webmvc</artifactId>
+			<artifactId>spring-web-reactive</artifactId>
 			<version>${org.springframework.version}</version>
 		</dependency>
 		
@@ -42,5 +42,16 @@
 			</plugin>
 		</plugins>
 	</build>
+	
+	<repositories>
+	    <repository>
+	        <id>spring-milestones</id>
+	        <name>Spring Milestones</name>
+	        <url>https://repo.spring.io/libs-milestone</url>
+	        <snapshots>
+	            <enabled>false</enabled>
+	        </snapshots>
+	    </repository>
+	</repositories>
 
 </project>
