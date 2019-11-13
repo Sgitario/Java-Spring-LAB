@@ -1,5 +1,5 @@
 package com.java.spring.lab.services;
 
-public interface Service {
+public interface ActionService {
 	public String doAction();
 }

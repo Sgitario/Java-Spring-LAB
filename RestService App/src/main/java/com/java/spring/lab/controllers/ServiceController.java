@@ -1,19 +1,19 @@
 package com.java.spring.lab.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
-import com.java.spring.lab.services.Service;
+import com.java.spring.lab.services.ActionService;
 
-@Controller
+@RestController
 public class ServiceController {
-	
+
 	@Autowired
-	private Service service;
-	
-	@RequestMapping("/service")
+	private ActionService service;
+
+	@GetMapping("/service")
 	public @ResponseBody String callService() {
 		return service.doAction();
 	}
