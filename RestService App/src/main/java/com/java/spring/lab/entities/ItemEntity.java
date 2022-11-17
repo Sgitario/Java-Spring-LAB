@@ -18,5 +18,7 @@ public class ItemEntity {
 	
 	private String field1;
 	private String field2;
+	private boolean active;
+	private int number;
 
 }

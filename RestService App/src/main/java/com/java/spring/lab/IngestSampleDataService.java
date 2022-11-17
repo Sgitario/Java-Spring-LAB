@@ -16,15 +16,17 @@ public class IngestSampleDataService {
 
 	@PostConstruct
 	public void init() {
-		repository.save(item("Sam", "Jaus"));
-		repository.save(item("Jose", "Carvajal"));
-		repository.save(item("Samuel", "Ubu"));
+		repository.save(item("Sam", "Jaus", false, 10));
+		repository.save(item("Jose", "Carvajal", true, 20));
+		repository.save(item("Samuel", "Ubu", false, 30));
 	}
 
-	private ItemEntity item(String field1, String field2) {
+	private ItemEntity item(String field1, String field2, boolean active, int number) {
 		ItemEntity entity = new ItemEntity();
 		entity.setField1(field1);
 		entity.setField2(field2);
+		entity.setActive(active);
+		entity.setNumber(number);
 		return entity;
 	}
 }
